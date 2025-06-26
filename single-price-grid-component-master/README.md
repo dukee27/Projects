@@ -8,7 +8,7 @@ This is a solution to the [Single Price Grid Component](https://www.frontendment
 
 ## 🚀 Live Demo
 
-[View Live Site](https://dukee27.github.io/single-price-grid-component/)
+[View Live Site](https://dukee27.github.io/single-price-grid-component-master/)
 
 
 ---
