@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-Red: hsl(356, 69%, 56%);
+
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --YouTube: hsl(348, 97%, 39%);
+
+   /* Dark Theme */
+
+    --ToggleDark: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+    /* Light Theme */
+
+    --ToggleLight: hsl(230, 22%, 74%);
+
+    /* Dark Theme */
+
+    --Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+    --Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
+    --Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+    --Desaturated-Blue-Text: hsl(228, 34%, 66%);
+    --White-Text: hsl(0, 0%, 100%);
+
+    /* Light Theme */
+
+    --White-BG: hsl(0, 0%, 100%);
+    --Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
+    --Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+    --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+    --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter",sans-serif;
+    font-size: 14px;
+    padding: 1.25rem;
+    background-color: var(--White-BG);
+}
+
+.followers {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding:1rem;
+}
+.followers article{
+    background-color: var(--Very-Pale-Blue-Top-BG-Pattern);
+    padding:1.2rem 4rem;
+    border-radius:0.25rem;
+}
+
+h3{
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-top: 0.3rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 3.2rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--ToggleLight);
+    -webkit-transition: .4s;
+    transition: 0.4s;
+    border-radius:1rem;
+}
+
+.slider::before{
+    
+    position:absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    left: 4px;
+    bottom: 4px;
+    border-radius:1rem;
+    background-color: white;
+    
+    transition: .4s;
+}
+
+input:checked + .slider{
+    background: var(--ToggleDark);
+    border: 1px solid var(--Very-Dark-Blue-BG);
+}
+input:checked + .slider:before {
+  transform: translateX(1.7rem);
+  background-color: var(--Dark-Desaturated-Blue-Card-BG);
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #007bff;
+}
