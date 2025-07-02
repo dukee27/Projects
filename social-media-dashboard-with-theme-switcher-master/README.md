@@ -1,6 +1,6 @@
 # 📊 Frontend Mentor - Social Media Dashboard with Theme Switcher
 
-![Design preview for the Social Media Dashboard with Theme Switcher coding challenge](./images/screenshots/light_mode_stretched.png)
+![Design preview for the Social Media Dashboard with Theme Switcher coding challenge](./screenshots/light_mode_stretched.png)
 
 ---
 
