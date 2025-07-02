@@ -54,11 +54,29 @@ body{
     flex-wrap: wrap;
     gap:1rem;
     padding:1rem;
+    flex-direction: column;
+}
+
+.attributes {
+    display: flex;
+    flex-wrap:wrap;
+    gap:0.5rem;
+    padding:1rem;
+    flex-direction: column;
+}
+.attributes article{
+    background-color: var(--Very-Pale-Blue-Top-BG-Pattern);
+    padding:0.8rem 0.5rem;
+    border-radius:0.25rem;
+    position:relative;
 }
 .followers article{
+    border-style:solid none none none;
+  
     background-color: var(--Very-Pale-Blue-Top-BG-Pattern);
-    padding:1.2rem 4rem;
+    padding:1.2rem 3rem;
     border-radius:0.25rem;
+    position:relative;
 }
 
 h3{
@@ -122,4 +140,127 @@ input:checked + .slider:before {
 }
 input:focus + .slider {
   box-shadow: 0 0 1px #007bff;
+}
+
+.top {
+    display:flex;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.count {
+    display:flex;
+    gap:0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.label{
+    display:flex;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.plus{
+    color: var(--Lime-Green);
+    display:flex;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.neg{
+    color: var(--Bright-Red);
+    display:flex;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.meta{
+    border-top-color:var(--Facebook) ;
+}
+.twitter{
+    border-top-color:var(--Twitter) ;
+}
+.instagram{
+    border-top: 4px solid;
+    border-image: var(--Instagram);
+    border-image-slice: 1;
+}
+.youtube{
+    border-top-color:var(--YouTube) ;
+}
+
+
+.views{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0.1rem 0.5rem;
+    font-weight: 600;
+}
+.value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  gap: 0.5rem; 
+}
+
+.value img {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
+
+.value span {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  gap: 0.3rem;
+  margin-left: auto; 
+}
+
+
+.icon {
+    padding:0.1rem .5rem;
+}
+.up{
+   float: right;
+    padding:0.1rem .5rem;
+    font-size: 0.6rem;
+    color: var(--Lime-Green);
+}
+.down{
+    
+    padding:0.1rem .5rem;
+    font-size: 0.6rem;
+    color: var(--Bright-Red);
+}
+
+@media(min-width:768px){
+   
+    .followers,
+  .attributes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .followers article,
+  .attributes article {
+    flex: 1 1 calc(25% - 1rem); /* 4 cards per row with gap */
+    min-width: 200px;
+  }
 }
