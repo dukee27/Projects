@@ -35,7 +35,20 @@
     --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
     --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
 }
+body.dark-mode{
+    background-color: var(--Very-Dark-Blue-BG);
+    color:var(--White-Text)
+}
 
+body.dark-mode .followers article,
+body.dark-mode .attributes article{
+    background-color: var(--Dark-Desaturated-Blue-Card-BG);
+    color:var(--White-Text)
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+}
 *{
     margin:0;
     padding:0;
@@ -262,5 +275,12 @@ input:focus + .slider {
   .attributes article {
     flex: 1 1 calc(25% - 1rem); /* 4 cards per row with gap */
     min-width: 200px;
+  }
+
+  .heading{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: space-between;
   }
 }
