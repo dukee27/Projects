@@ -40,8 +40,8 @@ The project is a responsive dashboard that allows toggling between light and dar
 
 | 🌙 Dark Mode (Mobile & Stretched) | ☀️ Light Mode (Mobile & Stretched) |
 |----------------------------------|-----------------------------------|
-| ![](./images/screenshots/dark_mode_mobile_view.png) | ![](./images/screenshots/light_mode_mobile_view.png) |
-| ![](./images/screenshots/dark_mode_stretched.png)   | ![](./images/screenshots/light_mode_stretched.png)   |
+| ![](./screenshots/dark_mode_mobile_view.png) | ![](./screenshots/light_mode_mobile_view.png) |
+| ![](./screenshots/dark_mode_stretched.png)   | ![](./screenshots/light_mode_stretched.png)   |
 
 ---
 
