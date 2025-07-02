@@ -1,6 +1,6 @@
 # 📊 Frontend Mentor - Social Media Dashboard with Theme Switcher
 
-![Design preview for the Social Media Dashboard with Theme Switcher coding challenge](./images/screenshots/light_mode_stretched.png)
+![Design preview for the Social Media Dashboard with Theme Switcher coding challenge](./screenshots/light_mode_stretched.png)
 
 ---
 
@@ -40,8 +40,8 @@ The project is a responsive dashboard that allows toggling between light and dar
 
 | 🌙 Dark Mode (Mobile & Stretched) | ☀️ Light Mode (Mobile & Stretched) |
 |----------------------------------|-----------------------------------|
-| ![](./images/screenshots/dark_mode_mobile_view.png) | ![](./images/screenshots/light_mode_mobile_view.png) |
-| ![](./images/screenshots/dark_mode_stretched.png)   | ![](./images/screenshots/light_mode_stretched.png)   |
+| ![](./screenshots/dark_mode_mobile_view.png) | ![](./screenshots/light_mode_mobile_view.png) |
+| ![](./screenshots/dark_mode_stretched.png)   | ![](./screenshots/light_mode_stretched.png)   |
 
 ---
 
