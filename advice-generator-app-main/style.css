@@ -50,3 +50,19 @@ body{
 .card p{
     color: var(--Blue_200)
 }
+
+.dot{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: var(--Green_300); 
+}
+.dot img{
+    height: 45%;
+    width: 45%;
+    cursor: pointer;
+}
