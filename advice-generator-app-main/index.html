@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
-  <link rel = stylesheet href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Advice Generator App</title>
 </head>
-  <body>
-    <div class="container">
-      <div class="card">
-        <h4>Advice #117</h4>
-        <p>"hello myself slim"</p>
-        <img class="divider" src="images/pattern-divider-mobile.svg" alt="divider">
-        
-        <span class = "dot"><img src="images/icon-dice.svg" alt = "dice symbol"></span>
-      </div>
-      
+<body>
+    <div class="advice-generator">
+        <div class="advice-generator__output">
+            <span class="advice-generator__advice-number">ADVICE #117</span>
+            <q class="advice-generator__quote">“It is easy to sit up and take notice,
+            what's difficult is getting up and taking action.”</q>
+            <picture class="advice-generator__divider">
+                <source media="(min-width: 545px)"
+                srcset="./images/pattern-divider-desktop.svg">
+                <img src="./images/pattern-divider-mobile.svg" alt="divider line
+                vector">
+            </picture>
+        </div>
+        <button class="advice-generator__btn">
+            <img src="./images/icon-dice.svg" class="advice-generator__btn-img"
+            alt="dice icon">
+        </button>
     </div>
-    <script src = "script.js"></script>
-  
-  </body>
+</body>
 </html>
