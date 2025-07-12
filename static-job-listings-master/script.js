@@ -16,9 +16,19 @@ fetch('data.json')
 
                 <h3 class = "position">${comp.position}</h3>
 
+                <div class = "meta">
+                    <span class = "postedAt">${comp.postedAt}</span>
+                    <span class = "contract">${comp.contract}</span>
+                    <span class = "location">${comp.location}</span>
+                </div>
             </div>
-
+            <div>
+                ${[comp.role,comp.level,comp.languages,comp.tools]
+                .map(skill => `<span class = "skill">${skill}</span>`)
+                .join("")}
+            </div>
         </div>
-        `)
+        `).join("");
+        }
+    );
         
-})
