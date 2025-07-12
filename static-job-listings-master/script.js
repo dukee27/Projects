@@ -2,9 +2,10 @@ let list = "";
 fetch('data.json')
 
 .then(response => response.json())
-.then(json => {
-    json.forEach(comp => {
+.then(data => {
+    data.forEach(comp => {
         list += `<li>${comp.company}</li>`;
+        document.querySelector(".cards").innerHTML = list;
     });
-    document.querySelector("ul").innerHTML = list;
+    
 })
