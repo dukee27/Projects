@@ -3,9 +3,22 @@ fetch('data.json')
 
 .then(response => response.json())
 .then(data => {
-    data.forEach(comp => {
-        list += `<li>${comp.company}</li>`;
-        document.querySelector(".cards").innerHTML = list;
-    });
-    
+    const container = document.querySelector(".job_listings");
+    container.innerHTML = data.map(comp => `
+        <div class = "card ${comp.featured} 'border-left': '')">
+            <img>
+            <div class = "info">
+                <div class = "company-row">
+                    <h3 class="company">${comp.company}</h3>
+                    ${comp.new ? '<span class = "tag">NEW!</span>' : ''}
+                    ${comp.featured ? '<span class = "tag">FEATURED</span>' : ''}
+                </div>
+
+                <h3 class = "position">${comp.position}</h3>
+
+            </div>
+
+        </div>
+        `)
+        
 })
