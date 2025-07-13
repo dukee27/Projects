@@ -27,9 +27,28 @@ body{
 }
 
 .job_listings {
-    
     display:flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+.card{
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.company-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.company{
+    padding:0.5rem 1rem;
+}
+
+.position{
+    padding-left: 0.7rem;
 }
