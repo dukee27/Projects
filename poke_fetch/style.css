@@ -1,13 +1,21 @@
 body{
-    text-align: center;
+    
     background-color: aliceblue;
+}
+.value{
+    display: flex;
+    flex-flow: row wrap;
+}
+.container{
+    text-align: center;
+    
     display: flex;
     align-items: center;
-    justify-items: auto;
-    position:absolute;
+    justify-content: center;
     padding: 2rem;
     justify-self:center;
-    
+    flex-flow: column wrap;
+
 }
 #pokemonName{
     padding: 0.9rem;
