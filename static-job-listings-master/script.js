@@ -10,20 +10,23 @@ fetch('data.json')
             <div class = "info">
                 <div class = "company-row">
                     <h3 class="company">${comp.company}</h3>
-                    ${comp.new ? '<span class = "tag">NEW!</span>' : ''}
-                    ${comp.featured ? '<span class = "tag">FEATURED</span>' : ''}
+                    ${comp.new ? '<span class = "tag1">NEW!</span>' : ''}
+                    ${comp.featured ? '<span class = "tag2">FEATURED</span>' : ''}
                 </div>
-
+                
                 <h3 class = "position">${comp.position}</h3>
 
                 <div class = "meta">
                     <span class = "postedAt">${comp.postedAt}</span>
+                    <span>&bull;</span>
                     <span class = "contract">${comp.contract}</span>
+                    <span>&bull;</span>
                     <span class = "location">${comp.location}</span>
                 </div>
             </div>
-            <div>
-                ${[comp.role,comp.level,comp.languages,comp.tools]
+            <hr class = "line">
+            <div class = "need">
+                ${[comp.role,comp.level,...comp.languages,...comp.tools]
                 .map(skill => `<span class = "skill">${skill}</span>`)
                 .join("")}
             </div>

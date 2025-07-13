@@ -31,24 +31,78 @@ body{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    
 }
 .card{
     background-color: white;
-    padding: 1rem;
+    padding: 0.7rem;
     margin-bottom: 2rem;
 }
 .company-row{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
+    align-items: center;   
+    padding-bottom: 0.5rem;
+    
 }
-
+.tag1 {
+    background-color: var(--Desaturated_Dark_Cyan);
+    color: var(--Light_Grayish_Cyan_Filter_Tablets);
+    padding: 0.3rem 0.5rem;
+    border-radius:1rem ;
+    margin-right: 0.5rem;
+}
 .company{
-    padding:0.5rem 1rem;
+    color: var(--Desaturated_Dark_Cyan);
+    font-size: 15px;
+    padding-left: 0.7rem;
+    padding-right: 0.8rem;
 }
 
 .position{
     padding-left: 0.7rem;
+    font-size: 15px;
+    padding-bottom: 0.5rem;
+}
+.meta{
+    color: var(--Dark_Grayish_Cyan);
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0.7rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.line{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    border-style: inset;
+    border-width: 1px;
+}
+.need{
+    display: flex;
+    padding-left: 0.7rem;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.skill{
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: var(--Light_Grayish_Cyan_Background);
+    color: var(--Desaturated_Dark_Cyan);
+    margin: 0.5rem;
+}
+
+.postedAt {
+    margin-right: 0.5rem;
+}
+.contract {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.location {
+    margin-left: 0.5rem;
 }
