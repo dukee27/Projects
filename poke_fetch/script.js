@@ -9,12 +9,19 @@
 // .catch(error => console.error(error))
 
 async function fetchData() {
-    const response = fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+    try{
+        const pokemonName = document.getElementById("pokemonSpirit")
+         const response = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
 
-    if(!response.ok){
-        throw new Error("cannot fetch the data");
+            if(!response.ok){
+                throw new Error("cannot fetch the data");
+            }
+            const data = await response.json();
+            console.log(data);
     }
-    const data = await respons.json();
-    console.log(data);
+    catch(error) {
+        console.log(error);
+    }
+   
 }
 fetchData();
