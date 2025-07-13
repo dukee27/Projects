@@ -23,13 +23,13 @@ body{
     font-size: 15px;
     font-family: "spartan",sans-serif;
     padding: 1.25rem;
-}
-.jobs article {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    gap: 2rem;
-    border-style: solid;
     background-color: var(--Light_Grayish_Cyan_Background);
+}
+
+.job_listings {
+    
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
