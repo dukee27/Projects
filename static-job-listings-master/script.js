@@ -5,7 +5,7 @@ fetch('data.json')
 .then(data => {
     const container = document.querySelector(".job_listings");
     container.innerHTML = data.map(comp => `
-        <div class = "card ${comp.featured ?'border-left': ''}">
+        <div class = "card" style="${comp.featured ?'border-left:5px solid green;': ''}">
             <img src = "${comp.logo}" alt = "${comp.name} logo" class = "logo">
             <div class = "info">
                 <div class = "company-row">
@@ -27,7 +27,7 @@ fetch('data.json')
             <hr class = "line">
             <div class = "need">
                 ${[comp.role,comp.level,...comp.languages,...comp.tools]
-                .map(skill => `<span class = "skill">${skill}</span>`)
+                .map(skill => `<btn class = "skill">${skill}</btn>`)
                 .join("")}
             </div>
         </div>
