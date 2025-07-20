@@ -5,8 +5,8 @@ fetch('data.json')
 .then(data => {
     const container = document.querySelector(".job_listings");
     container.innerHTML = data.map(comp => `
-        <div class = "card ${comp.featured} ?'border-left': '')">
-            <img>
+        <div class = "card ${comp.featured ?'border-left': ''}">
+            <img src = "${comp.logo}" alt = "${comp.name} logo" class = "logo">
             <div class = "info">
                 <div class = "company-row">
                     <h3 class="company">${comp.company}</h3>
