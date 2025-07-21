@@ -1,3 +1,4 @@
+
 let list = "";
 fetch('data.json')
 
@@ -32,6 +33,13 @@ fetch('data.json')
             </div>
         </div>
         `).join("");
+        
         }
-    );
+);
+
+document.querySelector(".job_listings").addEventListener('click', function(e){
+    if(e.target.classList.contains("skill")){
+        document.getElementById("filter").innerHTML = e.target.textContent; // show skill
+    }
+});
         
