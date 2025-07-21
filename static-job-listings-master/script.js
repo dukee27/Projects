@@ -27,7 +27,7 @@ fetch('data.json')
             <hr class = "line">
             <div class = "need">
                 ${[comp.role,comp.level,...comp.languages,...comp.tools]
-                .map(skill => `<btn class = "skill">${skill}</btn>`)
+                .map(skill => `<button class = "skill">${skill}</button>`)
                 .join("")}
             </div>
         </div>
