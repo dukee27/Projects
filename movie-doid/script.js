@@ -1,23 +1,19 @@
-// dom manipulation
+//dom manipulation
 
-//GetElementById()
-
-// const title = document.getElementById('main-heading');
+// style element
+// const title = document.querySelector('#main-heading');
 // console.log(title);
 
-//  GetElementByClassName()
+// title.style.color = 'red';
 
-// const listItems = document.getElementsByClassName('list-items');
-// console.log(listItems);
+// const lists = document.querySelectorAll('.list-items');
+// console.log(lists);
+// console.log(lists.length);
+// // lists.style.fontSize = "16px";
 
-// GetElementsByTagName()
+// for( i = 0 ; i < lists.length ; i++){
+//     lists[i].style.fontSize = "3rem";
+// }
 
-// const listItems = document.getElementsByTagName('li');
-// console.log(listItems);
+// Creating Elements
 
-// query selector()
-
-// const container = document.querySelector('div');
-// console.log(container);
-const container = document.querySelectorAll('div');
-console.log(container);
