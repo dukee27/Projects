@@ -25,11 +25,20 @@ h1{
     border: 5px solid white;
     padding: 3rem 1rem;
     border-radius: 1rem;
+    display:none;
 }
 .boxes-box-3{
     border: 5px solid white;
     padding: 3rem 1rem;
     border-radius: 1rem;
+    display:none;
+}
+
+.boxes-box-2.buttonOne{
+    display: block;
+}
+.boxes-box-3.buttonOne{
+    display: block;
 }
 button{
     background-color: hsl(224, 26%, 14%);
